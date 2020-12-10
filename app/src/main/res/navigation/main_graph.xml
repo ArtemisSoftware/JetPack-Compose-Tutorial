@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/testListFragment">
+
+    <fragment
+        android:id="@+id/testListFragment"
+        android:name="com.artemissoftware.jetpackcomposetutorial.TestListFragment"
+        android:label="TestListFragment" >
+        <action
+            android:id="@+id/action_testListFragment_to_secondTestFragment"
+            app:destination="@id/secondTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondTestFragment"
+        android:name="com.artemissoftware.jetpackcomposetutorial.SecondTestFragment"
+        android:label="SecondTestFragment" />
+</navigation>
